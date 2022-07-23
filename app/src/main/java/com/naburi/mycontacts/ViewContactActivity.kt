@@ -21,7 +21,6 @@ class ViewContactActivity : AppCompatActivity() {
         var phonenumber = intent.extras?.getString("PHONENUMBER")
         var image = binding.ivProfile
 
-
         Toast.makeText(this,"$name: $email: $phonenumber: $address",Toast.LENGTH_LONG).show()
         binding.tvTitus.text = name
         binding.tvNumber.text = phonenumber
