@@ -6,4 +6,197 @@
     android:layout_height="match_parent"
     tools:context=".ViewContactActivity">
 
+    <ImageView
+        android:id="@+id/ivProfile"
+        android:layout_width="177dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="88dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_person_24" />
+
+    <TextView
+        android:id="@+id/tvTitus"
+        android:layout_width="126dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="4dp"
+        android:text="Titus Saul"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivProfile" />
+
+    <ImageView
+        android:id="@+id/ivCall"
+        android:layout_width="51dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="64dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivMessage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ivMessage"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_baseline_phone_24" />
+
+    <ImageView
+        android:id="@+id/ivMessage"
+        android:layout_width="51dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="64dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivVideo"
+        app:layout_constraintStart_toEndOf="@+id/ivCall"
+        app:layout_constraintTop_toTopOf="@+id/ivVideo"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/ic_baseline_message_24" />
+
+    <ImageView
+        android:id="@+id/ivVideo"
+        android:layout_width="51dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitus"
+        app:srcCompat="@drawable/ic_baseline_video_call_24" />
+
+    <ImageView
+        android:id="@+id/ivStar"
+        android:layout_width="30dp"
+        android:layout_height="26dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivPen"
+        app:layout_constraintEnd_toStartOf="@+id/ivPen"
+        app:layout_constraintTop_toTopOf="@+id/ivPen"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_baseline_star_border_24" />
+
+    <ImageView
+        android:id="@+id/ivPen"
+        android:layout_width="30dp"
+        android:layout_height="26dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivHamburger"
+        app:layout_constraintEnd_toStartOf="@+id/ivHamburger"
+        app:layout_constraintTop_toTopOf="@+id/ivHamburger"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_baseline_colorize_24" />
+
+    <ImageView
+        android:id="@+id/ivHamburger"
+        android:layout_width="30dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_more_vert_24" />
+
+    <TextView
+        android:id="@+id/tvCall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="16dp"
+        android:text="Call"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivCall" />
+
+    <TextView
+        android:id="@+id/tvText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="76dp"
+        android:text="Text"
+        app:layout_constraintEnd_toStartOf="@+id/tvSetUp"
+        app:layout_constraintTop_toBottomOf="@+id/ivMessage" />
+
+    <TextView
+        android:id="@+id/tvSetUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="72dp"
+        android:text="Set Up"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivVideo" />
+
+    <ImageView
+        android:id="@+id/ivPhoneCall"
+        android:layout_width="42dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvInfo"
+        app:srcCompat="@drawable/ic_baseline_phone_24" />
+
+    <TextView
+        android:id="@+id/tvInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Contact Info"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCall" />
+
+    <TextView
+        android:id="@+id/tvNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="140dp"
+        android:text="0758862979"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.742"
+        app:layout_constraintStart_toEndOf="@+id/ivPhoneCall"
+        app:layout_constraintTop_toBottomOf="@+id/tvInfo" />
+
+    <TextView
+        android:id="@+id/tvGmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="116dp"
+        android:text="titusmalo@gmail.com"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNumber" />
+
+    <TextView
+        android:id="@+id/tvBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="136dp"
+        android:text="P.O Box 1 Funyula"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvGmail" />
+
+    <ImageView
+        android:id="@+id/ivGmail"
+        android:layout_width="42dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="68dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvGmail"
+        app:layout_constraintEnd_toStartOf="@+id/tvGmail"
+        app:layout_constraintTop_toTopOf="@+id/tvGmail"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_baseline_mark_email_unread_24" />
+
+    <ImageView
+        android:id="@+id/ivLocationPin"
+        android:layout_width="42dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="72dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvBox"
+        app:layout_constraintEnd_toStartOf="@+id/tvBox"
+        app:layout_constraintTop_toTopOf="@+id/tvBox"
+        app:layout_constraintVertical_bias="0.611"
+        app:srcCompat="@drawable/ic_baseline_location_on_24" />
 </androidx.constraintlayout.widget.ConstraintLayout>
